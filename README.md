@@ -8,10 +8,6 @@ Este README.md documenta o funcionamento das Migrations para o gerenciamento da 
 
 - Node.js
 
-# Versão
-
-> Dot.Lib version 1.0.0
-
 # Ambiente
 
 Instalar os pacotes necessários
