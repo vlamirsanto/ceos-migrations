@@ -26,7 +26,7 @@ module.exports = {
         type: Sequelize.STRING(120),
         allowNull: false,
       },
-      whatsapp_number: {
+      whatsapp: {
         type: Sequelize.STRING(15),
         allowNull: false,
       },
