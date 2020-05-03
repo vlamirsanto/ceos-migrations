@@ -36,18 +36,18 @@ module.exports = {
       city: {
         type: Sequelize.STRING(80),
       },
-      profileImage: {
+      profile_image: {
         type: Sequelize.STRING(120),
       },
-      createdAt: {
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updatedAt: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      deletedAt: {
+      deleted_at: {
         type: Sequelize.DATE,
       },
     });

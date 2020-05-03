@@ -1,12 +1,17 @@
 "use strict";
 
 const faker = require("faker/locale/pt_BR");
+const { Product } = require("../../app/models");
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     var newData = [];
 
+    const products = await Product.findAll();
+
     for (let i = 0; i < 100; i++) {
+      const product = faker.random.arrayElement(products);
+
       let date = faker.date.recent();
 
       const seedData = {
@@ -34,10 +39,9 @@ module.exports = {
           "Qual frequência em MHz?",
           "Boa noite! Teria esse modelo com a lente verde no mesmo valor?",
         ]),
-        product_id: 1,
-        // product_id: await User.findAll({ limit: 1 }).id,
-        createdAt: date,
-        updatedAt: date,
+        product_id: product.id,
+        created_at: date,
+        updated_at: date,
       };
       newData.push(seedData);
     }

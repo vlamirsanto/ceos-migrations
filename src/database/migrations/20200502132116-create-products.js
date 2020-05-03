@@ -29,11 +29,11 @@ module.exports = {
         type: Sequelize.STRING(50),
         allowNull: false,
       },
-      sizeW: {
+      size_w: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      sizeH: {
+      size_h: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
@@ -41,25 +41,25 @@ module.exports = {
         type: Sequelize.STRING(120),
         allowNull: false,
       },
-      // user_id: {
-      //   type: Sequelize.INTEGER,
-      //   references: {
-      //     model: "users",
-      //     key: "id",
-      //   },
-      //   onUpdate: "CASCADE",
-      //   onDelete: "CASCADE",
-      //   allowNull: false,
-      // },
-      createdAt: {
+      user_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "users",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
+        allowNull: false,
+      },
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updatedAt: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      deletedAt: {
+      deleted_at: {
         type: Sequelize.DATE,
       },
     });

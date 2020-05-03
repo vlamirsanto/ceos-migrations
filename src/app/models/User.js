@@ -53,7 +53,7 @@ module.exports = (sequelize, DataTypes) => {
           len: [5, 120],
         },
       },
-      whatsapp_number: {
+      whatsapp: {
         type: DataTypes.STRING(15),
         allowNull: false,
       },
@@ -63,7 +63,7 @@ module.exports = (sequelize, DataTypes) => {
       city: {
         type: DataTypes.STRING(80),
       },
-      profileImage: {
+      profile_image: {
         type: DataTypes.STRING(120),
       },
     },
