@@ -11,8 +11,7 @@ module.exports = {
 
     for (let i = 0; i < 100; i++) {
       const product = faker.random.arrayElement(products);
-
-      let date = faker.date.recent();
+      const date = faker.date.recent();
 
       const seedData = {
         name: faker.name.firstName(),
